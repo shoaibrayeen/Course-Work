@@ -53,7 +53,7 @@ int queue::dequeue() {
 void queue::display() {
   	if( ( front == NULL )  &&  ( rear == NULL ) ) {
   	    cout<<"\n Queue is empty ";
-    }
+        }
   	else {
   	     cout << "\n  " ;
   	     temp = front ;
@@ -64,17 +64,17 @@ void queue::display() {
   		              cout << temp->data << "->" ;
   		              temp = temp->next ;
     	         }
-         }
+             }
    	}
  }
  
 int isempty() {
 	if( ( front == NULL )  &&  ( rear == NULL ) ) {
 	    return 1 ;
-  }
+        }
 	else {
 	    return 0 ;
-  }
+        }
 }
 
 int main() {
