@@ -63,7 +63,7 @@ void stack::display() {
 
 int main() {
 	int choice,value;
-	stack o;
+	stack object;
 	while(1) {
 		cout << "\n\n\t\t Menu" ;
 		cout << "\n 1. push" ;
@@ -79,7 +79,8 @@ int main() {
 			         object.display() ;
 			         break ;
 			default : cout << "\n Invalid Choice \n " ;
+				  exit(0) ;
 		}
 	}
-	return 0;
+	return 0 ;
 }
