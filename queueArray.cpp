@@ -55,12 +55,10 @@ void queue::display() {
 		}	
 	}
 }
-int main()
-{
+int main() {
 	queue object ;
 	int choice , value ;
-	char ch = 'y' ;
-	while( ch == 'y'  ||  ch == 'Y' ) {
+	while( 1 ) {
 		cout << "\n\n\t\tMENU" ;
 		cout << "\n 1. Enqueue" ;
 		cout << "\n 2. Dequeue" ;
@@ -77,11 +75,8 @@ int main()
 			         object.display() ;
 			         break ;
 
-			default : cout << "\nWrong Choice\n" ; 
-				  return 0;
+			default : exit ( 0 ) ;
 		}
-		cout << "\n Do you want to continue " ;
-		cin >> ch ;
 	}
 	return 0 ;
 }
