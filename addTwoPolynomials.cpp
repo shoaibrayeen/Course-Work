@@ -43,8 +43,8 @@ void poly::insert(int c,int e) {
   	}
   	delete t;
 }
-void poly::add()
-{
+
+void poly::add() {
 	node* temp;
 	node *p,*q,*r;
 	p=o1.head;
@@ -124,6 +124,7 @@ void poly::display() {
   	}
   	delete t;
 }
+
 int main() {
 	cout << "\n Add two polynomials   .....!!!!!!!!!!!!!";
 	int choice,coef,exp;
@@ -156,6 +157,5 @@ int main() {
 		    	default : 	cout << "\n\n Invalid Choice ";
 		}
 	}
-	getch();
 	return 0;
 }
