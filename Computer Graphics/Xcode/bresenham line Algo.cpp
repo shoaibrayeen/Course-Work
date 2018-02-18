@@ -30,8 +30,6 @@ void bresenham_line () {
             y = ya;
             yEnd = yb;
         }
-        glColor3f (1.0, 0.0, 0.0);
-        glBegin(GL_POINTS);
         glVertex2s(x,y);
         while ( y < yEnd ) {
             y++ ;
@@ -49,8 +47,6 @@ void bresenham_line () {
             x = xa;
             xEnd = xb;
         }
-        glColor3f (1.0, 0.0, 0.0);
-        glBegin(GL_POINTS);
         glVertex2s(x,y);
         while ( x < xEnd ) {
             x++ ;
@@ -69,8 +65,6 @@ void bresenham_line () {
             y = ya;
             xEnd = xb;
         }
-        glColor3f (1.0, 0.0, 0.0);
-        glBegin(GL_POINTS);
         glVertex2s(x,y);
         while ( x < xEnd ) {
             x++ ;
@@ -96,8 +90,6 @@ void bresenham_line () {
             y = ya;
             yEnd = yb;
         }
-        glColor3f (1.0, 0.0, 0.0);
-        glBegin(GL_POINTS);
         glVertex2s(x,y);
         while ( y < yEnd ) {
             y++ ;
