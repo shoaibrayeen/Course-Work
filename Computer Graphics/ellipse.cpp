@@ -68,7 +68,7 @@ void main() {
 	      }
       	int x,y;
      	  double a,b;
-      	cout << "Enter the coordinates of center : \n";
+      	cout << "Enter the coordinates of ellipse : \n";
       	cin >> x;
       	cin >> y;
       	cout << "Enter a : ";
