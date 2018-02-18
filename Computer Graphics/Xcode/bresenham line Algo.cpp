@@ -12,7 +12,7 @@
 
 int xa,xb,ya,yb;
 
-void dda_line () {
+void bresenham_line () {
     
     glClear (GL_COLOR_BUFFER_BIT);
     glColor3f (1.0, 0.0, 0.0);
@@ -152,7 +152,7 @@ int main(int argc, char** argv) {
     glutInitWindowPosition (100,100);
     glutCreateWindow ("Bresenham's Line Algorithm ");
     init ();
-    glutDisplayFunc(dda_line);
+    glutDisplayFunc(bresenham_line);
     glutMainLoop();
     return 0;
 }
