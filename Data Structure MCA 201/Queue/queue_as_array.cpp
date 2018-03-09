@@ -25,7 +25,7 @@ class queue {
     queue();
     ~queue();
     void enqueue(int &);
-    int dequeue();
+    void dequeue();
     int peek();
     int size();
     bool isEmpty();
@@ -54,12 +54,15 @@ void queue :: enqueue( int & newValue) {
     display();
 }
 
-int queue :: dequeue() {
+void queue :: dequeue() {
     if(isEmpty()) {
-        return -1;
+        cout << "\nQueue is Empty.\n";
+        return;
     }
     else {
-        return arr[front++];
+        front++;
+        cout << "\nElement dequeued.\n";
+        return;
     }
 }
 
@@ -110,14 +113,8 @@ int main() {
                         cin >> temp;
                         obj.enqueue(temp);
                         break;
-            case 2 :    temp=obj.dequeue();
-                        if(temp==-1) {
-                            cout << "\nQueue is Empty.\n";
-                        }
-                        else {
-                            cout << "\nDequeued Element\t:\t" << temp;
-                            obj.display();
-                        }
+            case 2 :    obj.dequeue();
+                        obj.display();
                         break;
             case 3 :    temp=obj.peek();
                         if(temp==-1) {
