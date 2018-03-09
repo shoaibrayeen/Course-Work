@@ -99,7 +99,7 @@ int main() {
     stack obj;
     int temp;
     while(1) {
-        cout << "\n1.Push\n2.Pop\n3.Top Element of Stack\n4.Size of Array\n5.Exit\n";
+        cout << "\n1.Push\n2.Pop\n3.Top Element of Stack\n4.Size of Stack\n5.Exit\n";
         int choice;
         cout << "\nEnter Your Choice\t:\t";
         cin >> choice ;
