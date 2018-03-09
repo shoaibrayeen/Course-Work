@@ -96,7 +96,7 @@ void infix_to_postfix(string str)  {
 int main() {
     string str;
     cout << "\nEnter Infix Expression\t:\t";
-    cin >> str;
+    getline(cin , str);
     infix_to_postfix(str);
     cout << endl;
     return 0;
