@@ -21,7 +21,7 @@ int main() {
     stack<char> object;
     string str;
     cout << "\nEnter Parentheses\t:\t";
-    cin >> str;
+    getline(cin , str);
     int length=str.length();
     for ( int i=0 ; i < length ; ++i) {
         if(str[i]=='(') {
