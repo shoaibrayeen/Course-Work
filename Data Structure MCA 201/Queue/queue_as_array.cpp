@@ -81,7 +81,7 @@ int queue:: size() {
 }
 
 bool queue::isFull() {
-    if(rear == MAXSIZE) {
+    if((rear - 1) == MAXSIZE) {
         return true;
     }
     return false;
