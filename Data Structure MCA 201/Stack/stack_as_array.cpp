@@ -76,7 +76,7 @@ int stack:: size() {
 }
 
 bool stack::isFull() {
-    if(top==MAXSIZE) {
+    if(top==MAXSIZE-1) {
         return true;
     }
     return false;
