@@ -88,7 +88,7 @@ int stack<T>:: size() {
 
 template <class T>
 bool stack<T>::isFull() {
-    if(top==MAXSIZE) {
+    if(top==MAXSIZE-1) {
         return true;
     }
     return false;
