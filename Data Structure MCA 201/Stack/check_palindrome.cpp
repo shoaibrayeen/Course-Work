@@ -11,31 +11,35 @@
 #include <stack>
 #include <queue>
 using namespace std;
-int main() {
+
+bool checking_palindrome(string str) {
     stack<char> s;
     queue<char> q;
-    string str;
-    cout << "\nEnter String\t:\t";
-    cin >> str;
     int length = str.length();
     for ( int i = 0 ; i < length ; ++i) {
         s.push(str[i]);
         q.push(str[i]);
     }
-    bool flag = false;
     while (!s.empty()) {
         if(s.top() == q.front()){
             s.pop();
             q.pop();
         }
         else {
-            cout << "\nString is not Palindrom.\n";
-            flag = true;
-            break;
+            return false;
         }
     }
-    if( !flag ) {
+    return true;
+}
+int main() {
+    string str;
+    cout << "\nEnter String\t:\t";
+    getline(cin,str);
+    if(checking_palindrome(str)) {
         cout << "\nString is Palindrom.\n";
+    }
+    else {
+        cout << "\nString is not Palindrom.\n";
     }
     return 0;
 }
