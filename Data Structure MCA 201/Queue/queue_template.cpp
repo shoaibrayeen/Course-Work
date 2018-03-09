@@ -83,7 +83,7 @@ int queue<T>:: size() {
 }
 template <class T>
 bool queue<T>::isFull() {
-    if(rear == MAXSIZE) {
+    if( (rear-1) == MAXSIZE) {
         return true;
     }
     return false;
