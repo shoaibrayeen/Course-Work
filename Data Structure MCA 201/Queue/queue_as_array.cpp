@@ -18,13 +18,14 @@ class queue {
      output parameter : none
      approach : using array
      */
+    //private vairable of class
     int *arr;       // dynamic array
     int front;      //pointing index of first element of queue
     int rear;       //pointing index of last element of queue
     public :
-    queue();
-    ~queue();
-    void enqueue(int &);
+    queue();        //constructor
+    ~queue();       //destructor
+    void enqueue(int &); 
     void dequeue();
     int peek();
     int size();
@@ -34,15 +35,33 @@ class queue {
 };
 
 queue :: queue() {
+    /*
+     objective : constructor
+     input parameter : none
+     output parameter : none
+     approach : assigning value to variables
+     */
     arr = new int[MAXSIZE];
     front = -1;
     rear = -1;
 }
 queue :: ~queue() {
+    /*
+     objective : destructor of class
+     input parameter : none
+     output parameter : none
+     approach : deleting dynamic array
+     */
     delete[] arr;
 }
 
 void queue :: enqueue( int & newValue) {
+    /*
+     objective : enqueue function 
+     input parameter : newValue which has to inserted into queue
+     output parameter : none
+     approach : inserting element at rear 
+     */
     if(isEmpty()) {
         front++;
         rear++;
@@ -55,6 +74,12 @@ void queue :: enqueue( int & newValue) {
 }
 
 void queue :: dequeue() {
+    /*
+     objective : dequeue function
+     input parameter : none
+     output parameter : none
+     approach : removing front element of the queue
+     */
     if(isEmpty()) {
         cout << "\nQueue is Empty.\n";
         return;
@@ -67,6 +92,12 @@ void queue :: dequeue() {
 }
 
 int queue :: peek() {
+    /*
+     objective : returning front element
+     input parameter : none
+     output parameter : front element of array
+     approach : accessing front element
+     */
     if(isEmpty()) {
         return -1;
     }
@@ -76,17 +107,35 @@ int queue :: peek() {
 }
 
 int queue:: size() {
+    /*
+     objective : counting number of elements in queue
+     input parameter : none
+     output parameter : size of current queue
+     approach : using front and rear , calculating size
+     */
     return (rear - front + 1);
     
 }
 
 bool queue::isFull() {
+    /*
+     objective : isFull()
+     input parameter : none
+     output parameter : true if queue is full.
+     approach : camparing with MAXSIZE
+     */
     if((rear + 1) == MAXSIZE) {
         return true;
     }
     return false;
 }
 bool queue::isEmpty() {
+    /*
+     objective : isEmpty()
+     input parameter : none
+     output parameter : true if queue is empty
+     approach : comparing with rear and front
+     */
     if( front == -1 && rear==-1) {
         return true;
     }
@@ -94,6 +143,12 @@ bool queue::isEmpty() {
 }
 
 void queue:: display() {
+    /*
+     objective : displaying elements of queue
+     input parameter : none
+     output parameter : none
+     approach : using iteration from front to rear
+     */
     cout << "\nQueue Elements\n\n";
     for ( int i = front ; i <= rear ; ++i) {
         cout << " | " << arr[i] ;
