@@ -33,7 +33,7 @@ class stack_grow {
         approach    :   class defines three functions which can be accessed publicly such as :-
                         check_external() which checks external stacks.
                         check_internal() which checks internal stacks.
-                        main_q1() which calls these functions.
+                        main_q1() which calls member functions.
      
         ------------------------------------------------------------------------------------------------
      */
@@ -121,7 +121,7 @@ void stack_grow :: main_q1() {
     /*
      ------------------------------------------------------------------------------------------------
      
-     objective : to call check_internal() & check_external() functions
+     objective : to call member functions
      
      ------------------------------------------------------------------------------------------------
      input parameter : none
@@ -132,12 +132,12 @@ void stack_grow :: main_q1() {
      
      ------------------------------------------------------------------------------------------------
      
-     description :   calling both functions and displaying messages respectively
+     description :   calling member functions and displaying messages respectively
      
      ------------------------------------------------------------------------------------------------
      
-     approach    :   calling functions one by one. If functions are true , it displays that stack grows
-                     up otherwise stack grows down.
+     approach    :   calling member functions one by one. If functions are true , it displays that stack 
+                     grows up otherwise it displays that stack grows down.
      
      ------------------------------------------------------------------------------------------------
      */
