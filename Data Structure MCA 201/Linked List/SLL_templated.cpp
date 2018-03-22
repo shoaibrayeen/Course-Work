@@ -10,6 +10,7 @@
 #include <string>
 using namespace std;
 
+template <class T> class SLinkedList;
 template <class T>
 class SNode {
     /*
@@ -22,7 +23,7 @@ class SNode {
      */
     T elem;
     SNode* next;
-    template <class U> friend class SLinkedList; // provides SLinkedList access to SNode
+    friend class SLinkedList<T>; // provides SLinkedList access to SNode
 };
 
 template <class T>
