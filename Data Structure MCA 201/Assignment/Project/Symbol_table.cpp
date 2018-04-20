@@ -26,11 +26,6 @@ int Hash(char* name){
     return (idx % CHAIN_LENGTH);
 }
 
-void initialize() {
-    for(int i = 0; i < CHAIN_LENGTH; ++i) {
-        block[i] = NULL;
-    }
-}
 
 void Insert(char* name, char* classtype){
     int pos = Hash(name);
