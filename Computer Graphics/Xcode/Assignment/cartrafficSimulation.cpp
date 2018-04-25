@@ -141,7 +141,6 @@ void moveCar(bool slow=false,bool stop=false,int pos = 20) {
 
 int main() {
    initwindow(1280,700);
-   int temp;
    moveCar();
    getch();
    closegraph();
