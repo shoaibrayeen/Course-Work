@@ -67,7 +67,6 @@ void yellowLight() {
 
 
 void moveCar(bool slow=false,bool stop=false,int pos = 20) {
-    int temp;
     if(slow==true || stop == true) {
         for(int i=pos;i<1280;i++) {
             makeCar(i,i);
@@ -78,9 +77,6 @@ void moveCar(bool slow=false,bool stop=false,int pos = 20) {
             if(i == 1279) {
                 i=20;
             }
-            temp = i;
-
-
             if(GetAsyncKeyState('r') ||GetAsyncKeyState('R')) {
                 goto stopLabel;
             }
@@ -90,13 +86,13 @@ void moveCar(bool slow=false,bool stop=false,int pos = 20) {
             }
 
             if(GetAsyncKeyState('g') ||GetAsyncKeyState('G')) {
-                moveCar(pos=i);
+                moveCar(false,false,i);
             }
         }
     }
 
     else {
-        for(int i=20;i<1280;i++) {
+        for(int i=pos;i<1280;i++) {
             makeCar(i,i);
             makeTrafficSignal();
             greenLight();
@@ -105,7 +101,6 @@ void moveCar(bool slow=false,bool stop=false,int pos = 20) {
             if(i == 1279) {
                 i=20;
             }
-            temp = i;
 
 
             if(GetAsyncKeyState('r') ||GetAsyncKeyState('R')) {
@@ -117,7 +112,7 @@ void moveCar(bool slow=false,bool stop=false,int pos = 20) {
             }
 
             if(GetAsyncKeyState('g') ||GetAsyncKeyState('G')) {
-                moveCar(pos = temp);
+                moveCar(false.false,i);
             }
         }
     }
@@ -127,7 +122,7 @@ void moveCar(bool slow=false,bool stop=false,int pos = 20) {
         makeTrafficSignal();
         redLight();
         getch();
-        moveCar(stop = true,pos = temp);
+        moveCar(false ,true,i);
 
 
     slowLabel:
@@ -135,7 +130,7 @@ void moveCar(bool slow=false,bool stop=false,int pos = 20) {
         makeTrafficSignal();
         yellowLight();
         getch();
-        moveCar(slow = true,pos = temp);
+        moveCar( true,false ,i);
 }
 
 
