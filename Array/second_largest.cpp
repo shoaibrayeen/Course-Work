@@ -1,4 +1,4 @@
-#include<iostream>
+#include<bitstdc++.h>
 #include<math.h>
 using namespace std;
 int c=0;
