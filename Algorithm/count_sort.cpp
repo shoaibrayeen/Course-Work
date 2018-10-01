@@ -6,7 +6,7 @@
 //  Copyright © 2018 Shoaib Rayeen. All rights reserved.
 //
 
-#include<iostream>
+#include<bitstdc++.h>
 using namespace std;
 void display(int*a ,int n){
     cout << endl;
