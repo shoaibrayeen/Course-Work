@@ -15,18 +15,18 @@ using namespace std;
 int * reverse(int * , int );
 
 int main() {
-	int n;
+	int size;
 	cout << "\nEnter Size of Array\t:\t";
-	cin >> n;
+	cin >> size;
 	cout << endl;
 	int * result;
 	int* array= new int[n];
-	for ( int i = 0; i < n ; ++i ) {
+	for ( int i = 0; i < size ; ++i ) {
 		cout << "Enter " << i + 1 << " element\t\t:\t";
 		cin >> array[i];
 	}
-	result = reverse(array , n );
-	for ( int i = 0; i < n ; ++i ) {
+	result = reverse(array , size );
+	for ( int i = 0; i < size ; ++i ) {
 		cout << "\n" << i + 1 << " element\t\t:\t" << result[i];
 	}
 	cout << endl;
