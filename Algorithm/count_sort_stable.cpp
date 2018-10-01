@@ -7,7 +7,7 @@
 //
 
 #include<stack>
-#include<iostream>
+#include<bitstdc++.h>
 
 using namespace std;
 
