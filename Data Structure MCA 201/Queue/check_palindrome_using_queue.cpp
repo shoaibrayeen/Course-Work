@@ -11,16 +11,16 @@
 #include <queue>
 using namespace std;
 bool checking_palindrome(string str) {
-    queue<char> q;
+    queue<char> que;
     int length = str.length();
     int i;
     for (i = 0 ; i < length/2 ; ++i) {
-        q.push(str[i]);
+        que.push(str[i]);
     }
     i = length - 1;
-    while (!q.empty()) {
-        if(q.front() == str[i] ){
-            q.pop();
+    while (!que.empty()) {
+        if(que.front() == str[i] ){
+            que.pop();
             --i;
         }
         else {
