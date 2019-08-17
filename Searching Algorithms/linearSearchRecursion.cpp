@@ -1,23 +1,24 @@
 #include <iostream>
 using namespace std ;
 
-class sort {
+class search {
 	private :
-		int array[10] , number ;
+		int array[100] , number ;
 	public :
-		sort() ;
+		search() ;
 		void input() ;
 		void display() ; 
-		void linearSearch(int,int) ;
+		int linearSearch(int , int) ;
 };
 
-sort :: sort () {
-	for ( int i = 0 ; i < 10 ; ++i )
+search :: search () {
+	for ( int i = 0 ; i < 100 ; ++i ) {
 		array[i] = 0;
+	}
 	number = 0 ;
 }
 
-void sort :: input() {
+void search :: input() {
 	cout << "\nEnter number of elemnets\t:\t" ;
 	cin >> number ;
 	cout << "\nEnter Elements\n" ;
@@ -28,20 +29,19 @@ void sort :: input() {
 	}
 }
 
-void sort :: linearSearch(int element,int i=0) {
+int search :: linearSearch(int element,int i = 0) {
 	if( array[i] == element ) {
-		cout << "\nElement " << element << " found at " << ( i + 1 ) << " position.\n" ;
-		return ;
+		return (i + 1);
 	}
 	else  if ( i >= number ) {
-		cout << "\nElement " << element << " is not found.\n " ;
+		return -1;
 	}
 	else {
-		linearSearch( element , ++i ) ;
+		return linearSearch( element , ++i ) ;
 	}
 }
 
-void sort :: display() {
+void search :: display() {
 	for ( int i = 0 ; i < number ; ++i ) {
 		cout << array[i] <<"\t" ;
 	}
@@ -49,13 +49,19 @@ void sort :: display() {
 }
 
 int main() {
-	sort object;
+	search object;
 	object.input() ;
 	cout << "\nEntered Elements\t:\t" ;
 	object.display() ;
 	int element ;
 	cout << "\nEnter the elemnt which you want to search\t:\t" ;
 	cin >> element ;
-	object.linearSearch( element ) ;
-	return 0;
+	int res = object.linearSearch( element ) ;
+	if ( res == -1 ) {
+		cout << "\nElement " << element << " is not found.\n " ;
+	}
+	else {
+		cout << "\nElement " << element << " found at " << res << " position.\n" ;
+	}
+ 	return 0;
 }
