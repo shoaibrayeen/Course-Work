@@ -14,7 +14,7 @@ class search {
 
 search :: search () {
 	array = new int[100];
-	for ( int i = 0 ; i < 10 ; ++i ) {
+	for ( int i = 0 ; i < 100 ; ++i ) {
 		array[i] = 0;
 	}
 	number = 0 ;
@@ -31,7 +31,7 @@ void search :: input() {
 	}
 }
 
-int sort :: binarySearch(int element, int high , int low = 0 ) {
+int search :: binarySearch(int element, int high , int low = 0 ) {
 	if ( low > high ) {
 		return -1;
 	}
