@@ -9,8 +9,9 @@ int main()
 	k=n;
 	if(pid==0)
 	{
-		for(i=(n-1);i>=1;i--)
+		for(i=(n-1);i>=1;i--) {
 			n*=i;
+                } 
 		printf("\nFactorial of %d\t:\t%d\n",k,n);
 	}
 	else
