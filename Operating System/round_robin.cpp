@@ -19,10 +19,10 @@ int main() {
 	cin >> tq;
 	for(int i = 1; i < n; i++) {
 		for(int j = i; j >= 1; j--) {
-			if(a[j-1]>a[j]) {
-				swap(a[j],a[j+1]);
-				swap(b[j],b[j+1]);				
-				swap(p[j],p[j+1]);
+			if(a[j-1] > a[j]) {
+				swap(a[j] , a[j+1]);
+				swap(b[j] , b[j+1]);				
+				swap(p[j] , p[j+1]);
 			}
 			else {
 				break;
@@ -31,34 +31,34 @@ int main() {
 	}
 	int db[n], L = 0, S[n];
 	for(int i = 0; i < n; i++ ) {
-		db[i]=b[i];
-		L+=b[i];
-		S[i]=-1;
+		db[i] = b[i];
+		L += b[i];
+		S[i] = -1;
 	}
 
 	for(int j = a[0] , i = 0; j < L; ) {
-			if(db[i]!=0) {
+			if(db[i] != 0) {
 
-				if(S[i]==-1) {	
-					wt[i]=j-a[i];
+				if(S[i] == -1) {	
+					wt[i] = j - a[i];
 				}
 				else {
-					wt[i]=wt[i]+j-S[i];
+					wt[i] = wt[i] + j - S[i];
 				}
 	
-				if(db[i]<=tq) {	
-					j+=db[i];
-					db[i]=0;
-					tat[i]=j-a[i];
+				if(db[i] <= tq) {	
+					j += db[i];
+					db[i] = 0;
+					tat[i] = j - a[i];
 				}			
 				else {	
-					db[i]-=tq;
-					j+=tq;
-					S[i]=j;
+					db[i] -= tq;
+					j += tq;
+					S[i] = j;
 				}
 				
 			}
-			i = (i+1)%n;
+			i = (i + 1)%n;
 	}
 	
 	cout<<"\nProcess\tBT\tAT\tWT\tTAT\n";
