@@ -14,3 +14,8 @@ int main() {
 
    return 0;
 }
+# Difference between signed and unsigned data types
+/*
+Signed Short Int	   :	-15536
+unsigned Short Int	:	50000
+*/
