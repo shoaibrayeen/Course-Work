@@ -58,6 +58,8 @@ int main() {
 	cout << "\nValue of c :: |= operator\t:\t" << c ;
 	c ^= a ;
 	cout << "\nValue of c :: ^= operator\t:\t" << c ;
+	c ~= a ;
+	cout << "\nValue of c :: ~= operator\t:\t" << c ;
 	cout << endl;
 	return 0;
 }
