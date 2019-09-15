@@ -1,13 +1,20 @@
 #include <iostream>
 #include <cstring>
 using namespace std;
-void printBook( struct Books book );
+
 struct Books {
 	char title[50];
 	char author[50];
 	char subject[100];
 	int book_id;
 };
+void printBook( struct Books book ) {
+	cout << "Book title : " << book.title <<endl;
+	cout << "Book author : " << book.author <<endl;
+	cout << "Book subject : " << book.subject <<endl;
+	cout << "Book id : " << book.book_id <<endl;
+}
+
 
 int main( ) {
 	struct Books Book1; // Declare Book1 of type Book
@@ -27,10 +34,4 @@ int main( ) {
 	// Print Book2 info
 	printBook( Book2 );
 	return 0;
-}
-void printBook( struct Books book ) {
-	cout << "Book title : " << book.title <<endl;
-	cout << "Book author : " << book.author <<endl;
-	cout << "Book subject : " << book.subject <<endl;
-	cout << "Book id : " << book.book_id <<endl;
 }
