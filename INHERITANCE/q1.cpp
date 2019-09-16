@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+
 // Base class
 class Shape {
 	public:
@@ -13,6 +14,7 @@ class Shape {
 		int width;
 		int height;
 };
+
 // Derived class
 class Rectangle: public Shape {
 	public:
@@ -20,8 +22,10 @@ class Rectangle: public Shape {
 			return (width * height);
 		}
 };
+
 int main(void) {
 	Rectangle Rect;
+	// Inheriting base class member functions
 	Rect.setWidth(5);
 	Rect.setHeight(7);
 // Print the area of the object.
