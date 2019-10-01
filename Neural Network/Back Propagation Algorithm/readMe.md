@@ -1,4 +1,5 @@
-## Backpropagation is a supervised learning algorithm, for training Multi-layer Perceptrons. The Backpropagation algorithm looks for the minimum value of the error function in weight space using a technique called the delta rule or gradient descent. The weights that minimize the error function is then considered to be a solution to the learning problem.
+## Backpropagation
+It is supervised learning algorithm, for training Multi-layer Perceptrons. The Backpropagation algorithm looks for the minimum value of the error function in weight space using a technique called the delta rule or gradient descent. The weights that minimize the error function is then considered to be a solution to the learning problem.
 
 ## Why We Need Backpropagation?
 While designing a Neural Network, in the beginning, we initialize weights with some random values or any variable for that fact.
