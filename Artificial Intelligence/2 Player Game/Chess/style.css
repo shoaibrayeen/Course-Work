@@ -1,0 +1,25 @@
+/*
+*
+*    style.css
+*
+*
+*    Created by Mohd Shoaib Rayeen on 05/02/19.
+*    Copyright © 2018 Shoaib Rayeen. All rights reserved.
+*
+*/
+
+
+.board {
+    width: 800px;
+    margin: auto
+}
+
+.info {
+    width: 800px;
+    margin: auto;
+}
+
+.move-history {
+    max-height: 100px;
+    overflow-y: scroll;
+}
