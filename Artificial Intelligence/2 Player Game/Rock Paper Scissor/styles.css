@@ -1,0 +1,81 @@
+body {
+	background-image: url(background-image.jpg);
+	background-position: top center;
+	background-size: cover;
+	text-align: center;
+}
+header {
+	background-color:  rgb(35, 148, 129);
+	color: #eee;
+	text-align: center;
+	height: 60px;
+	padding-top: 5px;
+	display: block;
+	margin-top: 0px;
+	margin-bottom: 60px;
+	box-sizing: border-box;
+	position: relative;
+	width: 100%;
+}
+
+#display {
+	font-family: "Lucida Console", Monaco, monospace;
+	font-size: larger;
+	font-weight: bolder;
+	margin:0.5em;
+	padding: 10px;
+}
+
+.buttons {
+	width: 100%;
+	margin: auto;
+	text-align: center;
+	padding-top: 5%;
+	padding-bottom: 20px;
+}
+
+
+span {
+	width: 100%;
+	margin: auto;
+	text-align: center;
+	font-family: 'Arial';
+	font-size: x-large;
+	font-weight: bold;
+	color: #41A3A0;
+}
+
+
+.scoreLine {
+	display: inline-block;
+	background-color: rgba(121,164,140,0.2);
+	padding: 10px;
+	margin:1em;
+}
+
+.score {
+	font-family: "Lucida Console", Monaco, monospace;
+	font-size:large;
+	font-weight: bold;
+}
+
+button {
+	background-color: rgb(35, 148, 129);
+	border: none;
+	color: white;
+	font-weight: bolder;
+	font-size: larger;
+	text-align: center;
+	width: 150px;
+	min-height: 2.5em;
+	margin: 1em;
+	border-radius: 2px;
+}
+
+button:hover {
+	background-color: #41A3A0;
+}
+
+.reset {
+	font-size:medium;
+}

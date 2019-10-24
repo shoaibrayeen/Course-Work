@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link type="text/css" rel="stylesheet" href="style.css" />
+		<script type="text/javascript" src="script.js"></script>
+		<title>Tic Tac Toe</title>
+	</head>
+	<body>
+		<header>
+			<p>Tic Tac Toe</p>
+		</header>
+			<br />
+			<p id="message"></p>
+			<br />
+		<table id="tab-tic-tac-toe" cellspacing="0">
+			<tr><td id="00" onclick="clickedCell(this)"></td><td id="01" onclick="clickedCell(this)"></td><td id="02" onclick="clickedCell(this)"></td></tr>
+			<tr><td id="10" onclick="clickedCell(this)"></td><td id="11" onclick="clickedCell(this)"></td><td id="12" onclick="clickedCell(this)"></td></tr>
+			<tr><td id="20" onclick="clickedCell(this)"></td><td id="21" onclick="clickedCell(this)"></td><td id="22" onclick="clickedCell(this)"></td></tr>
+		</table>
+		<br><br>
+		<input type="button" value="Computer" id="bnt-restart" onclick="restartBnt(this)"/>
+		<br />
+	</body>
+</html>
