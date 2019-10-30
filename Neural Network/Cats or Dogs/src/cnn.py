@@ -77,12 +77,12 @@ train_datagen = ImageDataGenerator(
 
 test_datagen = ImageDataGenerator(rescale=1./255)
 
-training_set = train_datagen.flow_from_directory('Data/Train',
+training_set = train_datagen.flow_from_directory('../Data/Train',
                                                  target_size=(64, 64),
                                                  batch_size=32,
                                                  class_mode='binary')
 
-test_set = test_datagen.flow_from_directory('Data/Test',
+test_set = test_datagen.flow_from_directory('../Data/Test',
                                             target_size=(64, 64),
                                             batch_size=32,
                                             class_mode='binary')
@@ -96,7 +96,7 @@ classifier.fit_generator(training_set,
 
 import numpy as np
 from keras.preprocessing import image
-test_image = image.load_img('Data/Prediction/image1.jpg', target_size=(64, 64))
+test_image = image.load_img('../Data/Prediction/image11.jpg', target_size=(64, 64))
 test_image = image.img_to_array(test_image)
 test_image = np.expand_dims(test_image, axis = 0)
 result = classifier.predict(test_image)
