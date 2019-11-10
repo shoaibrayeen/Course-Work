@@ -2,6 +2,6 @@
 ## Execute the code
 ```sh
  Go to src Folder
- For Python, Run on Shell -> $Python3 cnn.py
+ For Python, Run on Shell -> $Python3 CNN.py
  For Jupyter Notebook -> Open .ipynb file
 ```
