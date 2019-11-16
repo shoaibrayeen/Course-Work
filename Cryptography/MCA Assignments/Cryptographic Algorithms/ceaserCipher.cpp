@@ -1,10 +1,3 @@
-//
-//  ceaserCipher.cpp
-//  Information Secuirty
-//
-//  Created by Mohd Shoaib Rayeen on 17/10/18.
-//  Copyright © 2018 Shoaib Rayeen. All rights reserved.
-//
 #include<stdio.h>
 #include<iostream>
 #include<string.h>
@@ -55,18 +48,19 @@ void decrypt(char *enc,int key,char *dec) {
 
 int main() {
     int key;
-    char msg[100],enc[100],dec[100];
+    char msg[100],enc[100];
     cout << "\nEnter the message to be encrypted\t:\t";
     gets(msg);
-    cout<<"Enter the key(In Integer)\t:\t";
-    cin>>key;
     encrypt(msg,key,enc);
-    cout<<"The encrypted message\t:\t"<<enc<<endl;
-    decrypt(enc,key,dec);
-    int l = strlen(dec);
-    for(int i = 0; i < l;i++) {
+   for( int i = 1; i <26; i++ ) {
+       char dec[200];
+       decrypt(enc,i,dec);
+       cout << dec << "\n";
+       int l = strlen(dec);
+        for(int i = 0; i < l;i++) {
         dec[i]=tolower(dec[i]);
-    }
-    cout<<"The decrypted message\t:\t"<<(dec)<<endl;
+        }
+        
+   }
     return 0;
 }
