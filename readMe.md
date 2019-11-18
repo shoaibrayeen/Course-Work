@@ -28,5 +28,5 @@
 - [Tic Toc Toe](https://shoaibrayeen.github.io/Course-Work/Artificial%20Intelligence/2%20Player%20Game/Tic%20Toc%20Toe/index.html)
 
 ## Algorithm Assignment
-- [Section A](http://shoaibrayeen.github.io/Course-Work/Algorithms/Assignment/Section%20A/readMe)
-- [Section B](http://shoaibrayeen.github.io/Course-Work/Algorithms/Assignment/Section%20B/Run%20Code/readMe)
+- [Section A](http://shoaibrayeen.github.io/Course-Work/Algorithms/Assignment/Section%20A)
+- [Section B](http://shoaibrayeen.github.io/Course-Work/Algorithms/Assignment/Section%20B/Run%20Code)
