@@ -1,4 +1,4 @@
-# This project detects that the image is a dog or a cat. CNN is used as model.
+# This project detects that the image is a dog or a cat. CNN is used as a model.
 ## Execute the code
 ```sh
  Go to src Folder
