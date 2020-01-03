@@ -43,18 +43,18 @@ function playRound (playerSelection, computerSelection) {
 	playerSelection = playerSelection.toUpperCase();
 	computerSelection = computerSelection.toUpperCase();
 	if (playerSelection === computerSelection) {
-		resultDisplay.textContent = 'Tie!';
+		resultDisplay.textContent = 'Tie! You both have the same choice.';
 		return;
 	}
 	else if (playerSelection === 'ROCK') {
 		if (computerSelection === 'PAPER') {
-			resultDisplay.textContent ='You lose! Paper beats Rock.';
+			resultDisplay.textContent ='Computer chooses Paper. You lose! Paper beats Rock.';
 			scoreComputer+=1;
 			computer.textContent=scoreComputer;
 			return;
 		}
 		else {
-			resultDisplay.textContent='You win! Rock beats Scissors.';
+			resultDisplay.textContent='Computer chooses Scissors. You win! Rock beats Scissors.';
 			scorePlayer+=1;
 			player.textContent=scorePlayer;
 			return;	
@@ -62,13 +62,13 @@ function playRound (playerSelection, computerSelection) {
 	}
 	else if (playerSelection === 'PAPER') {
 		if (computerSelection === 'SCISSORS') {
-			resultDisplay.textContent ='You lose! Scissors beats Paper.';
+			resultDisplay.textContent ='Computer chooses Scissors. You lose! Scissors beats Paper.';
 			scoreComputer+=1;
 			computer.textContent=scoreComputer;
 			return;
 		}
 		else {
-			resultDisplay.textContent='You win! Paper beats Rock.';
+			resultDisplay.textContent='Computer chooses Rock. You win! Paper beats Rock.';
 			scorePlayer+=1;
 			player.textContent=scorePlayer;
 			return;
@@ -76,13 +76,13 @@ function playRound (playerSelection, computerSelection) {
 	}
 	else {
 		if (computerSelection === 'ROCK') {
-			resultDisplay.textContent ='You lose! Rock beats Scissors.';
+			resultDisplay.textContent ='Computer chooses Rock. You lose! Rock beats Scissors.';
 			scoreComputer+=1;
 			computer.textContent=scoreComputer;
 			return;
 		}
 		else {
-			resultDisplay.textContent='You win! Scissors beats Paper.';
+			resultDisplay.textContent='Computer chooses Paper. You win! Scissors beats Paper.';
 			scorePlayer+=1;
 			player.textContent=scorePlayer;
 			return;
