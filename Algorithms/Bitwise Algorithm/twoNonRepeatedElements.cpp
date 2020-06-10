@@ -32,10 +32,10 @@ void get2NonRepeatingNos(int arr[], int n, int *x, int *y)
 /* Driver program to test above function */
 int main()
 {
-  int arr[] = {2, 3, 7, 9, 11, 2, 3, 11};
+  int arr[] = {2, 3, 7, 9, 11, 2, 3, 11, 12, 4, 4, 12};
   int *x = (int *)malloc(sizeof(int));
   int *y = (int *)malloc(sizeof(int));
-  get2NonRepeatingNos(arr, 8, x, y);
+  get2NonRepeatingNos(arr, 12, x, y);
   printf("The non-repeating elements are %d and %d", *x, *y);
   getchar();
 }
